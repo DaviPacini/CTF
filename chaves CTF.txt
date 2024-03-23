@@ -54,3 +54,14 @@ sort {file_name}(ordenate lines) | uniq -u (print only non-duplicated lines)
 9 --> 10 = G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 how to pass: 
 strings(human-readable strings) {file_name} | grep "{word}"
+
+10 --> 11 = 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+how to pass: 
+ls -a
+cat {file_name} | base64 -d(for decode base64 command)
+
+11 --> 12 = JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+how to pass:
+cat {file_name} | tr (Translate or delete charters) 'A-Za-z'(init. Sequence)'N-ZA-Mn-za-m'(ROT13 sequence)
+
+
