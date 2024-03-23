@@ -35,4 +35,22 @@ du -a -b
 search the 1033 bytes file
 cat < {file_name}
 
-bandit6
+
+6 --> 7 = z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+how to pass:
+find / -type f(just regular files) -user bandit7 (owned by user bandit7) -group bandit6(owned by group bandit6) -size 33c(set file size to 33 bytes) 2>/dev/null(redirect err to dev/null)
+terminal will gave adress
+copy adress gived
+cat adress
+
+7 --> 8 = TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+how to pass:
+grep {word_searched} {file_name}
+
+8 --> 9 = EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+how to pass: 
+sort {file_name}(ordenate lines) | uniq -u (print only non-duplicated lines)
+
+9 --> 10 = G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+how to pass: 
+strings(human-readable strings) {file_name} | grep "{word}"
