@@ -7,7 +7,7 @@ cat {file_name} ex: cat readme
 1 --> 2 = rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 how to pass:
 cat < {file_name} ex: cat < -
-Quando o nome do arquivo for "-", usar o cat não é suficiente, então usamos o "<" para sinalizar que não virá um comando como "-h"
+Quando o nome do arquivo for "-", usar o cat não é suficiente, então usamos o "<" para redirecionar a leitura do arquivo
 
 2 --> 3 = aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 how to pass:
@@ -20,6 +20,19 @@ cd {rep_name}
 ls -a (to see the name of hidden file)
 cat {file_name}
 
-bandit4
 
+4 --> 5 = lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+how to pass:
+cd {rep_name}
+ls
+cat < {file_name}
 
+5 --> 6 = P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+how to pass:
+ls
+cd {rep_name}
+du -a -b
+search the 1033 bytes file
+cat < {file_name}
+
+bandit6
