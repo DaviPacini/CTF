@@ -1,0 +1,25 @@
+ssh -i bandit.labs.overthewire.org -p 2220 {user}@bandit.labs.overthewire.org
+
+0 --> 1 = NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+how to pass: 
+cat {file_name} ex: cat readme
+
+1 --> 2 = rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+how to pass:
+cat < {file_name} ex: cat < -
+Quando o nome do arquivo for "-", usar o cat não é suficiente, então usamos o "<" para sinalizar que não virá um comando como "-h"
+
+2 --> 3 = aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+how to pass:
+cat "{file_name}" ex: cat "spaces in this filename"
+You will use "" when the file_name has spaces between words
+ 
+3 --> 4 = 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+how to pass: 
+cd {rep_name}
+ls -a (to see the name of hidden file)
+cat {file_name}
+
+bandit4
+
+
